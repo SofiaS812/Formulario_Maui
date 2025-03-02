@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20, 20, 20, 10" Spacing="10" >
+            <Label Text="Formulario" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Seleccionar documento"/>
+            <Picker x:Name ="Documento2" Title="Selecciona uno">
+                <Picker.Items>
+                    <x:String>Cedula de ciudadania</x:String>
+                    <x:String>Documento identidad</x:String>
+                    <x:String>Documento extranjero</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Número de identificación"/>
+            <Entry Placeholder="Identificación" Keyboard="Numeric"/>
+            
+
+            <Label Text="Nombre de la persona"/>
+            <Entry Placeholder="Nombre" x:Name="Nombre"/>
+
+            <Label Text="Fecha de nacimiento"/>
+            <DatePicker x:Name="fechanacimiento"/>
+
+            <Label Text="Sexo"/>
+            <HorizontalStackLayout>
+                <RadioButton x:Name="Masculino" Content="Masculino" GroupName="Sexo"/>
+                <RadioButton x:Name="Femenino" Content="Femenino" GroupName="Sexo"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Número de celular"/>
+            <Entry Placeholder="Numcel" Keyboard="Telephone" MaxLength="10"/>
+
+            <Button x:Name="Saludobtn" Text="Saludar" Clicked="Saludobtn_Clicked" FontAttributes="Bold" Margin="40, 20"/>
+            
+        </VerticalStackLayout>
+            
+    </ScrollView>
+
+</ContentPage>
