@@ -8,6 +8,7 @@
             <Label Text="Formulario" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
 
             <!--Holaa Sofia-->
+            <!--ola-->
             <Label Text="Seleccionar documento"/>
             <Picker x:Name ="Documento2" Title="Selecciona uno">
                 <Picker.Items>
